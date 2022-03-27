@@ -16,7 +16,7 @@
             android:name=".SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".home.views.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
