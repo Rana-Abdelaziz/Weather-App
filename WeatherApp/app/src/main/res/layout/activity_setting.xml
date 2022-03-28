@@ -4,6 +4,203 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingActivity">
+    tools:context=".SettingActivity"
+    android:background="@drawable/my_back_ground"
+    >
 
+    <TextView
+        android:id="@+id/settingTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/setting"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:layout_marginStart="12dp"
+        android:id="@+id/locationTxt"
+        android:layout_marginTop="20dp"
+        android:text="@string/location"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTxt" />
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTxt"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape"
+        android:id="@+id/locationLayout">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gpe_radio_btn"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="@string/gps" />
+
+        <RadioButton
+            android:id="@+id/map_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/map"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:layout_marginStart="12dp"
+        android:id="@+id/temperatureTxt"
+        android:layout_marginTop="20dp"
+        android:text="@string/location"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationLayout" />
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureTxt"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape"
+        android:id="@+id/temperatureLayout">
+
+        <RadioButton
+            android:id="@+id/celsius_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/celsius"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/kelvin_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/kelvin"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/fahrenheit_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/fahrenheit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/languageTxt"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="@string/language"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndtOf="@+id/locationTxt"
+        app:layout_constraintTop_toBottomOf="@+id/settingTxt" />
+
+    <LinearLayout
+        android:id="@+id/languageLayout"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/locationLayout"
+        app:layout_constraintTop_toBottomOf="@+id/languageTxt">
+
+        <RadioButton
+            android:id="@+id/english_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/english"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/arabic_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/arabic"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/windSpeedTxt"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="@string/wind_speed"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndtOf="@+id/locationTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureLayout" />
+
+    <LinearLayout
+        android:id="@+id/windSpeedLayout"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedTxt">
+
+        <RadioButton
+            android:id="@+id/m_h_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/meter_sec"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/m_s_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/mile_hour"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/drawable/my_back_ground.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/drawable/shape.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/activity_favorite.xml" value="0.1" />
         <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/activity_setting.xml" value="0.25" />
         <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/daily_row.xml" value="0.1" />
         <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/hourly_row.xml" value="0.1" />
+        <entry key="..\:/Users/2y/Documents/GitHub/Weather-App/WeatherApp/app/src/main/res/layout/my_back_ground.xml" value="0.1" />
         <entry key="..\:/Users/2y/Documents/ITIAndriodProjects/Kotlin/WeatherApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/2y/Documents/ITIAndriodProjects/Kotlin/WeatherApp/app/src/main/res/drawable/shape.xml" value="0.1287037037037037" />
         <entry key="..\:/Users/2y/Documents/ITIAndriodProjects/Kotlin/WeatherApp/app/src/main/res/layout/activity_home.xml" value="0.18" />
