@@ -4,14 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoriteActivity"
+    tools:context=".favorite.views.FavoriteActivity"
     android:background="@drawable/my_back_ground">
+    <TextView
+        android:id="@+id/favoriteTxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/favorite"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/favorite_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoriteTxt"
+        tools:layout_editor_absoluteY="50dp" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/teal_200"
         android:elevation="50sp"
         android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="parent"

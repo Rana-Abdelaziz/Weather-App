@@ -1,22 +1,27 @@
 package com.example.weatherapp.models.responseDataModel
 
+import com.google.gson.annotations.SerializedName
+
+
 data class Daily (
-    var dt :Int,
-    var sunrise :Int,
-    var sunset :Int,
-    var moonrise :Int,
-    var moonset :Int,
-    var moon_phase :Double,
-    var temp: Temp,
-    var feels_like: FeelsLike,
-    var pressure :Int,
-    var humidity :Int,
-    var dew_point :Double,
-    var wind_speed :Double,
-    var wind_deg :Int,
-    var weather: ArrayList<Weather>,
-    var clouds :Int,
-    var pop :Double,
-    var rain :Double,
-    var uvi :Double,
+
+  @SerializedName("dt"         ) var dt        : Long?               = null,
+  @SerializedName("sunrise"    ) var sunrise   : Int?               = null,
+  @SerializedName("sunset"     ) var sunset    : Int?               = null,
+  @SerializedName("moonrise"   ) var moonrise  : Int?               = null,
+  @SerializedName("moonset"    ) var moonset   : Int?               = null,
+  @SerializedName("moon_phase" ) var moonPhase : Double?            = null,
+  @SerializedName("temp"       ) var temp      : Temp?              = Temp(),
+  @SerializedName("feels_like" ) var feelsLike : FeelsLike?         = FeelsLike(),
+  @SerializedName("pressure"   ) var pressure  : Int?               = null,
+  @SerializedName("humidity"   ) var humidity  : Int?               = null,
+  @SerializedName("dew_point"  ) var dewPoint  : Double?            = null,
+  @SerializedName("wind_speed" ) var windSpeed : Double?            = null,
+  @SerializedName("wind_deg"   ) var windDeg   : Int?               = null,
+  @SerializedName("wind_gust"  ) var windGust  : Double?            = null,
+  @SerializedName("weather"    ) var weather   : ArrayList<Weather> = arrayListOf(),
+  @SerializedName("clouds"     ) var clouds    : Int?               = null,
+  @SerializedName("pop"        ) var pop       : Double?               = null,
+  @SerializedName("uvi"        ) var uvi       : Double?            = null
+
 )

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">الطقس اليوم</string>
+<string name="home">الصفحه الرئيسيه</string>
+<string name="setting">الإعدادات</string>
+<string name="location">المكان</string>
+<string name="gps">تحديد الموقع</string>
+<string name="map">الخريطه</string>
+<string name="celsius">سيليزيوس</string>
+<string name="kelvin">كيلفين</string>
+<string name="fahrenheit">فهرنهيت</string>
+<string name="language">اللغه</string>
+<string name="english">الانجليزيه</string>
+<string name="arabic">العربيه</string>
+<string name="wind_speed">سرعه الرياح</string>
+<string name="meter_sec">م/ث</string>
+<string name="mile_hour">ميل/الساعه</string>
+<string name="title_activity_maps">MapsActivity</string>
+<string name="temperature">درجه الحراره</string>
+<string name="pressure">الضغط</string>
+<string name="humidity">الندي</string>
+<string name="wind">رياح</string>
+<string name="cloud">سحاب</string>
+<string name="favorite">المفضله</string>
+<string name="alerts">المنبه</string>
+<string name="weather">الطقس</string>
+<string name="open">فتح</string>
+<string name="close">إغلاق</string>
+<string name="save">حفظ</string>
+<string name="meterPerSecond">م/ث</string>
+<string name="hpa">hpa</string>
+<string name="question">كيف ترغب في استخدم البرنامج</string>
+    <!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+<string name="numOfDayes">عدد الأيام</string>
+<string name="selectStartDate">اختار موعد البدء</string>
+<string name="startDate">موعدالبدء</string>
+<string name="mapBtn">اختار المكان</string>
+<string name="title_activity_maps_activitytwo">MapsActivitytwo</string>
+<string name="selectTime">المعاد المحدد</string>
+</resources>

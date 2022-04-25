@@ -1,8 +1,13 @@
-package com.example.weatherapp.models.responseDataModel
+package  com.example.weatherapp.models.responseDataModel
+
+import com.google.gson.annotations.SerializedName
+
 
 data class FeelsLike (
-    var day :Double,
-    var night :Double,
-    var eve :Double,
-    var morn :Double
+
+  @SerializedName("day"   ) var day   : Double? = null,
+  @SerializedName("night" ) var night : Double? = null,
+  @SerializedName("eve"   ) var eve   : Double? = null,
+  @SerializedName("morn"  ) var morn  : Double? = null
+
 )

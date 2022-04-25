@@ -1,8 +1,13 @@
-package com.example.weatherapp.models.responseDataModel
+package  com.example.weatherapp.models.responseDataModel
+
+import com.google.gson.annotations.SerializedName
+
 
 data class Weather (
-    var id :Int,
-    var main: String,
-    var description: String,
-    var icon: String
+
+  @SerializedName("id"          ) var id          : Int?    = null,
+  @SerializedName("main"        ) var main        : String? = null,
+  @SerializedName("description" ) var description : String? = null,
+  @SerializedName("icon"        ) var icon        : String? = null
+
 )

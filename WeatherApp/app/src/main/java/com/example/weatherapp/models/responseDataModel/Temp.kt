@@ -1,10 +1,15 @@
-package com.example.weatherapp.models.responseDataModel
+package  com.example.weatherapp.models.responseDataModel
+
+import com.google.gson.annotations.SerializedName
+
 
 data class Temp (
-    var day :Double,
-    var min :Double,
-    var max :Double,
-    var night :Double,
-    var eve :Double,
-    var morn :Double
+
+  @SerializedName("day"   ) var day   : Double? = null,
+  @SerializedName("min"   ) var min   : Double? = null,
+  @SerializedName("max"   ) var max   : Double? = null,
+  @SerializedName("night" ) var night : Double? = null,
+  @SerializedName("eve"   ) var eve   : Double? = null,
+  @SerializedName("morn"  ) var morn  : Double? = null
+
 )

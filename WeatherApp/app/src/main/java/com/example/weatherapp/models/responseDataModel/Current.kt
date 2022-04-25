@@ -1,21 +1,37 @@
-package com.example.weatherapp.models.responseDataModel
+package  com.example.weatherapp.models.responseDataModel
 
-import com.example.weatherapp.models.AllModels
+import com.google.gson.annotations.SerializedName
+
 
 data class Current (
-    var dt :Int,
-    var sunrise :Int,
-    var sunset :Int,
-    var temp :Double,
-    var feels_like :Double,
-    var pressure :Int,
-    var humidity :Int,
-    var dew_point :Double,
-    var uvi :Double,
-    var clouds :Int,
-    var visibility :Int,
-    var wind_speed :Int,
-    var wind_deg :Int,
-    var weather: ArrayList<Weather>,
-    var rain: Rain
+
+  @SerializedName("dt"         )
+  var dt         : Int?               = null,
+  @SerializedName("sunrise"    )
+  var sunrise    : Int?               = null,
+  @SerializedName("sunset"     )
+  var sunset     : Int?               = null,
+  @SerializedName("temp"       )
+  var temp       : Double?            = null,
+  @SerializedName("feels_like" )
+  var feelsLike  : Double?            = null,
+  @SerializedName("pressure"   )
+  var pressure   : Int?               = null,
+  @SerializedName("humidity"   )
+  var humidity   : Int?               = null,
+  @SerializedName("dew_point"  )
+  var dewPoint   : Double?               = null,
+  @SerializedName("uvi"        )
+  var uvi        : Double?            = null,
+  @SerializedName("clouds"     )
+  var clouds     : Int?               = null,
+  @SerializedName("visibility" )
+  var visibility : Int?               = null,
+  @SerializedName("wind_speed" )
+  var windSpeed  : Double?            = null,
+  @SerializedName("wind_deg"   )
+  var windDeg    : Int?               = null,
+  @SerializedName("weather"    )
+  var weather    : ArrayList<Weather> = arrayListOf()
+
 )

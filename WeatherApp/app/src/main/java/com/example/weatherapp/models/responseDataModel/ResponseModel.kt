@@ -1,16 +1,42 @@
 package com.example.weatherapp.models.responseDataModel
 
-import com.example.weatherapp.models.AllModels
-import com.example.weatherapp.models.Minutely
+import androidx.annotation.NonNull
+import androidx.room.ColumnInfo
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 
-data class ResponseModel  (
-    var lat :Double,
-    var lon :Double,
-    var timezone: String,
-    var timezone_offset :Int,
-    var current: Current,
-    var minutely: ArrayList<Minutely>,
-    var hourly: ArrayList<Hourly>,
-    var daily: ArrayList<Daily>,
-    var alerts: ArrayList<Alert>,
+@Entity(tableName = "Response")
+data class ResponseModel (
+  @ColumnInfo(name = "latitude")
+  @SerializedName("lat"             )
+  var lat            : Double?             = null,
+  @ColumnInfo(name = "longitude")
+  @SerializedName("lon"             )
+  var lon            : Double?             = null,
+  @ColumnInfo(name = "timezone")
+  @PrimaryKey
+  @NonNull
+  @SerializedName("timezone")
+  var timezone       : String,
+  @ColumnInfo(name = "timezone_offset")
+  @SerializedName("timezone_offset" )
+  var timezoneOffset : Int?                = null,
+  @Embedded
+  @SerializedName("current"         )
+  var current        : Current?            = Current(),
+  @ColumnInfo(name = "minutely")
+  @SerializedName("minutely"        )
+  var minutely       : ArrayList<Minutely> = arrayListOf(),
+  @ColumnInfo(name = "hourly")
+  @SerializedName("hourly"          )
+  var hourly         : ArrayList<Hourly>   = arrayListOf(),
+  @ColumnInfo(name = "daily")
+  @SerializedName("daily"           )
+  var daily          : ArrayList<Daily>    = arrayListOf(),
+  /*@ColumnInfo(name = "alerts")
+  @SerializedName("alerts"          )
+  var alerts         : ArrayList<Alerts>   = arrayListOf()*/
+
 )
